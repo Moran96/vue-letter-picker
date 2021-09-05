@@ -1,24 +1,56 @@
 # vue-letter-picker
 
-## Project setup
+The letter picker component based  exported as Node.js modules.
+
+## Installation
+
+Using npm:
 ```
-npm install
+$ npm i vue-letter-picker -S
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+In main.js file:
+```javascript
+import Vue from 'vue'
+import App from './App.vue'
+// import element-ui
+import ElementUI from 'element-ui'
+// import element-ui style file
+import 'element-ui/lib/theme-chalk/index.css'
+// import letter-picker
+import LetterPicker from 'vue-letter-picker'
+
+Vue.use(ElementUI)
+Vue.use(LetterPicker)
+
+Vue.config.productionTip = false
+
+new Vue({
+  render: h => h(App)
+}).$mount('#app')
+
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+In target vue file:
+
+Template:
+
+```html
+<letter-picker v-model="letter" type="lowercase" />
 ```
 
-### Lints and fixes files
-```
-npm run lint
+Script:
+
+```javascript
+export default {
+  data () {
+    return {
+      letter: ''
+    }
+  }
+}
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Support
+
+Safari 10.1+, Chrome 54+, Firefox 63+, IE9 and above.

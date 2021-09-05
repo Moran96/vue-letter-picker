@@ -112,7 +112,7 @@ $letter-light-gray: #DCDFE6;
     z-index: 1;
     width: 207px;
     height: 32px;
-    padding-left: 30px;
+    padding-left: 15px;
     border: 1px solid $letter-light-gray;
     border-radius: 4px;
     line-height: 32px;
@@ -140,10 +140,8 @@ $letter-light-gray: #DCDFE6;
       position: absolute;
       top: 0;
       z-index: -1;
-      p {
-        color: $letter-gray;
-        font-size: 13px;
-      }
+      color: $letter-gray;
+      font-size: 13px;
     }
   }
 }
