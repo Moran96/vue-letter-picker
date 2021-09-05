@@ -1,6 +1,6 @@
 {
   "name": "vue-letter-picker",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "the letter picker based on vue.js and ElementUI",
   "main": "lib/vue-letter-picker.umd.js",
   "author": "morgana1996",

@@ -15,10 +15,10 @@ import Vue from 'vue'
 import App from './App.vue'
 // import element-ui
 import ElementUI from 'element-ui'
-// import element-ui style file
 import 'element-ui/lib/theme-chalk/index.css'
 // import letter-picker
 import LetterPicker from 'vue-letter-picker'
+import 'vue-letter-picker/lib/vue-letter-picker.css'
 
 Vue.use(ElementUI)
 Vue.use(LetterPicker)
